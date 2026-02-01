@@ -260,7 +260,7 @@ app.get("/setup", requireSetupAuth, (_req, res) => {
     <h2>Status</h2>
     <div id="status">Loading...</div>
     <div style="margin-top: 0.75rem">
-      <a href="/openclaw" target="_blank">Open OpenClaw UI</a>
+      <a href="/openclaw?token=${OPENCLAW_GATEWAY_TOKEN}" target="_blank">Open OpenClaw UI</a>
       &nbsp;|&nbsp;
       <a href="/setup/export" target="_blank">Download backup (.tar.gz)</a>
     </div>
